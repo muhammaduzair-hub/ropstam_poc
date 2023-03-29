@@ -71,7 +71,7 @@ class HomeViewModel extends BaseModel {
               color: colorController.text,
               regNo: registrationNoController.text)
           .then((value) {
-        if (value > 1) {
+        if (value > 0) {
           cars.add(CarModel(
               name: titleController.text,
               model: modelController.text,

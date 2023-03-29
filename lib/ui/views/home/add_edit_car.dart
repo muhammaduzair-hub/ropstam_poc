@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ropstam_poc/constants/strings.dart';
-import 'package:ropstam_poc/constants/toast_util.dart';
 import 'package:ropstam_poc/ui/shared/ui_helpers.dart';
 import 'package:ropstam_poc/ui/views/base_widget.dart';
 import 'package:ropstam_poc/viewmodels/views/home_viewmodel.dart';
@@ -22,7 +21,6 @@ class AddEditCar extends StatelessWidget {
       model: homeViewModelmodel,
       onModelReady: (p0) {
         if (selectedIndex != null) {
-          ToastUtil.showToast("In check");
           p0.getSelectedItemInfo(selectedIndex!);
         }
       },
